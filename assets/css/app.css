@@ -1,0 +1,15 @@
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.signUpSection {
+  width: 50%;
+}
+.infoSection {
+  width: 50%;
+}
