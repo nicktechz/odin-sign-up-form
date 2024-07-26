@@ -6,94 +6,199 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/app.css" />
-    <title>Claim your artist | NICKYFY</title>
+    <link rel="shortcut icon" href="./assets/img/fav.jpg" type="image/x-icon" />
+    <title>Create an account | Kify</title>
   </head>
   <body>
     <main>
       <section class="signUpSection">
-        <header class="signUpHeader">
-          <img src="" alt="" class="signUpLogo" />
-        </header>
-        <section class="signUpForm">
-          <h1>Your future in the music production starts today</h1>
-          <span>Create an account to start your 14 days free trial</span>
-          <button>Log-in with Google</button>
-          <span>Or</span>
-          <form action="/" method="GET">
-            <fieldset>
-              <label for="firstName">First name</label>
-              <div>
-                <img src="" alt="" />
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  id="firstName"
-                  name="firstName"
-                />
-              </div>
-              <label for="lastName">Last name</label>
-              <div>
-                <img src="" alt="" />
-                <input
-                  type="text"
-                  placeholder="Enter your last name"
-                  id="lastName"
-                  name="lastName"
-                />
-              </div>
-            </fieldset>
-            <fieldset>
-              <label for="email">Email address</label>
-              <div>
-                <img src="" alt="" />
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email address"
-                  name="emailAddress"
-                />
-              </div>
-              <label for="phone">Phone number</label>
-              <div>
-                <img src="" alt="" />
-                <input
-                  type="text"
-                  placeholder="Enter your phone number"
-                  id="phone"
-                  name="phoneNumber"
-                />
-              </div>
-            </fieldset>
-            <fieldset>
-              <label for="password">Password</label>
-              <div>
-                <div>
-                  <img src="" alt="" />
-                  <input
-                    type="text"
-                    id="password"
-                    placeholder="Create a password"
-                    name="password"
-                  />
+        <section class="signUpWrapper">
+          <header class="signUpHeader">
+            <img src="./assets/img/logo.svg" alt="" class="signUpLogo" />
+          </header>
+          <section class="signUpForm">
+            <h1>Your future in the music production starts today</h1>
+            <span class="infoSignUp"
+              >Create an account to start your 14 days free trial</span
+            >
+            <button class="googleLogin" type="button">
+              <img src="./assets/img/Google__G__logo.svg.webp" alt="" />Log-in
+              with Google
+            </button>
+            <div class="formSeparator">
+              <hr class="separator" />
+              <span class="">Or</span>
+              <hr class="separator" />
+            </div>
+            <form action="/" method="GET" id="form">
+              <fieldset class="dualInputs">
+                <section>
+                  <label for="firstName">First name</label>
+                  <div class="fieldSet">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-user"
+                    >
+                      <path
+                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Enter your first name"
+                      id="firstName"
+                      name="firstName"
+                    />
+                  </div>
+                </section>
+                <section>
+                  <label for="lastName">Last name</label>
+                  <div class="fieldSet">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-user"
+                    >
+                      <path
+                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Enter your last name"
+                      id="lastName"
+                      name="lastName"
+                    />
+                  </div>
+                </section>
+              </fieldset>
+              <fieldset>
+                <section>
+                  <label for="email">Email address</label>
+                  <div class="fieldSet">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-at-sign"
+                    >
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <path
+                        d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"
+                      ></path>
+                    </svg>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter your email address"
+                      name="emailAddress"
+                    />
+                  </div>
+                </section>
+                <section>
+                  <label for="phone">Phone number</label>
+                  <div class="fieldSet">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-phone"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Enter your phone number"
+                      id="phone"
+                      name="phoneNumber"
+                    />
+                  </div>
+                </section>
+              </fieldset>
+              <fieldset>
+                <label for="password">Password</label>
+                <div class="fieldSet">
+                  <div class="passwordInput">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-key"
+                    >
+                      <path
+                        d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"
+                      ></path>
+                    </svg>
+                    <input
+                      type="text"
+                      id="password"
+                      placeholder="Create a password"
+                      name="password"
+                    />
+                  </div>
+                  <button type="button" id="seePassword">
+                    <img src="./assets/img/eye.svg" alt="" />
+                  </button>
                 </div>
-                <button type="button"><img src="" alt="" /></button>
-              </div>
-            </fieldset>
-            <fieldset>
-              <input
-                type="radio"
-                id="rememberPassword"
-                value="rememberPassword"
-              />
-              <label for="rememberPassword">Remember password</label>
-            </fieldset>
-            <button type="submit">Create New account</button>
-          </form>
-          <span>Already have an account? <a href="#">Login now</a></span>
+              </fieldset>
+              <fieldset>
+                <section id="rememberPasswordSection">
+                  <input
+                    type="radio"
+                    id="rememberPassword"
+                    value="rememberPassword"
+                  />
+                  <label for="rememberPassword">Remember password</label>
+                </section>
+              </fieldset>
+              <button type="submit" id="submitBtn">Create New account</button>
+            </form>
+            <span class="helperSection">
+              Already have an account?
+              <a href="#">Login now</a></span
+            >
+          </section>
         </section>
       </section>
       <section class="infoSection">
-        <div></div>
+        <div>&nbsp;</div>
       </section>
     </main>
     <footer><script src="passwordUtil.js"></script></footer>
