@@ -5,16 +5,15 @@
   --color-gray: rgb(76, 76, 76);
   --color-border-light: rgb(212, 212, 212);
   --color-white: #fff;
-  --color-white-darken: #f6f6f6;
+  --color-white-darken: #faf8f8;
   --border-radius: 4px;
 }
 main {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   align-items: stretch;
+  min-height: 100vh;
 }
 
 /* SIGN UP SECTION */
@@ -24,7 +23,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding: 56px;
+  padding: 56px 0px;
 }
 .signUpWrapper {
   margin: 0 auto;
@@ -125,6 +124,9 @@ input:focus {
   background-color: transparent;
   border: none;
 }
+#seePassword:hover {
+  cursor: pointer;
+}
 
 #rememberPasswordSection {
   display: flex;
@@ -166,6 +168,11 @@ input:focus {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
+  transition: 5s all;
+}
+.helperSection > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* INFO SECTION */
@@ -178,7 +185,6 @@ input:focus {
   align-items: stretch;
   width: 100%;
   display: flex;
-
   background-image: url(../img/banner.jpg);
   background-position: center;
 }

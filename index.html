@@ -58,6 +58,7 @@
                       id="firstName"
                       name="firstName"
                       required
+                      autocomplete="name"
                     />
                   </div>
                 </section>
@@ -87,6 +88,7 @@
                       id="lastName"
                       name="lastName"
                       required
+                      autocomplete="family-name"
                     />
                   </div>
                 </section>
@@ -118,6 +120,7 @@
                       placeholder="Enter your email address"
                       name="emailAddress"
                       required
+                      autocomplete="email"
                     />
                   </div>
                 </section>
@@ -145,6 +148,7 @@
                       placeholder="Enter your phone number"
                       id="phone"
                       name="phoneNumber"
+                      autocomplete="tel-national"
                       required
                     />
                   </div>
@@ -179,7 +183,11 @@
                     />
                   </div>
                   <button type="button" id="seePassword">
-                    <img src="./assets/img/eye.svg" alt="" />
+                    <img
+                      src="./assets/img/eye.svg"
+                      alt=""
+                      id="seePasswordIcon"
+                    />
                   </button>
                 </div>
               </fieldset>
@@ -206,6 +214,6 @@
         <div>&nbsp;</div>
       </section>
     </main>
-    <footer><script src="passwordUtil.js"></script></footer>
+    <footer><script src="./assets/js/watchPassword.js"></script></footer>
   </body>
 </html>
